@@ -1,3 +1,5 @@
+/* General  */
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -5,18 +7,8 @@ body {
 	margin:0;
 }
 
-#navbar {
-	display: flex;
-	list-style: none;
-	text-decoration: none;
-	justify-content: flex-end;
-	flex-direction: row;
-	background-color: orange;
-	padding:8px 15px;
-}
-
-#navbar li{
-	padding:5px 15px 0px 0px;
+ul {
+		list-style: none;
 }
 
 a {
@@ -24,15 +16,35 @@ a {
 	font-size: 13px;
 }
 
+/* Header  */
+
+#navbar {
+	display: flex;
+	text-decoration: none;
+	justify-content: flex-end;
+	flex-direction: row;
+	padding:8px 15px;
+}
+
+#navbar li{
+	padding:5px 15px 0px 0px;
+}
+
+.gmi {
+	color: rgba(0,0,0,0.87);
+}
+
 #connexion {
 	background-color: #4387fd;
 	border:1px solid #4285f4;
 	height: 30px;
-	color: #FFF;
+	color: #fff;
 	border-radius:3px;
 	font-weight:bold;
 	padding: 5px 10px;
 }
+
+/* Main */
 
 #logo {
 	display: flex;
@@ -40,6 +52,7 @@ a {
 	justify-content: center;
 	margin-bottom: 23px;
 }
+
 
 #search {
 	display: flex;
@@ -71,6 +84,7 @@ input[type=submit] {
 	font-weight: bold;
 	padding: 0 16px;
 	height:36px;
+	font-size: 13px;
 }
 
 input[type=submit]:hover {
@@ -82,4 +96,42 @@ input[type=submit]:hover {
 }
 
 
+/* Footer  */
 
+footer {
+	background-color: #f2f2f2;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+footer a {
+	color:rgba(0,0,0,.54);
+}
+
+#country {
+	display: flex;
+	height: 41px;
+	border: 1px solid #e4e4e4;
+	padding-left: 40px;
+	align-items: center;
+	color:rgba(0,0,0,.54);
+	font-size: 15px;
+}
+
+#infos {
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: -9px;
+}
+
+#footer-left, #footer-right{
+	display: flex;
+	align-items: center;
+}
+
+
+#footer-left li, #footer-right li {
+		margin: 0px 10px;
+}
