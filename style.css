@@ -5,6 +5,7 @@ body {
 	flex-direction: column;
 	font-family: Arial;
 	margin:0;
+	padding: 0;
 }
 
 ul {
@@ -16,6 +17,11 @@ a {
 	font-size: 13px;
 }
 
+a:hover {
+	text-decoration: underline;
+	
+}
+
 /* Header  */
 
 #navbar {
@@ -23,7 +29,7 @@ a {
 	text-decoration: none;
 	justify-content: flex-end;
 	flex-direction: row;
-	padding:8px 15px;
+	padding:4px 15px;
 }
 
 #navbar li{
@@ -44,28 +50,55 @@ a {
 	padding: 5px 10px;
 }
 
+#icone_app {
+	opacity: 0.5;
+}
+
+#icone_app:hover {
+	opacity: 1;
+}
+
 /* Main */
 
 #logo {
 	display: flex;
-	margin-top:140px;
+	margin-top:132px;
 	justify-content: center;
 	margin-bottom: 23px;
 }
 
-
-#search {
+#searchmaman {
 	display: flex;
 	justify-content: center;
+
 }
 
-#searchbar {
-	height: 44px;
+
+#search {
 	box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.16);
 	border: none;
 	width: 40%;
 	max-width: 586px;
 	min-width: 484px;
+	outline: none;
+    display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#searchbar {
+	height: 44px;
+	width: 100%;
+	font-size: 20px;
+	outline: none;
+	font-size: 24px;
+	border: none;
+}
+
+#micro {
+	width: 5%;
+	margin-right: 8px;
+	height:20px;
 }
 
 #searchbuttons {
@@ -103,6 +136,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+
 }
 
 footer a {
@@ -135,3 +169,4 @@ footer a {
 #footer-left li, #footer-right li {
 		margin: 0px 10px;
 }
+
