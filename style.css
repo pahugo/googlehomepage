@@ -1,8 +1,6 @@
 /* General  */
 
 body {
-	display: flex;
-	flex-direction: column;
 	font-family: Arial;
 	margin:0;
 	padding: 0;
@@ -59,18 +57,20 @@ a:hover {
 }
 
 /* Main */
+main{
+	display: flex;
+	flex-direction:column;
+	
+	
+}
+
 
 #logo {
 	display: flex;
+	justify-content: center;
 	margin-top:132px;
-	justify-content: center;
 	margin-bottom: 23px;
-}
-
-#searchmaman {
-	display: flex;
-	justify-content: center;
-
+	
 }
 
 
@@ -82,8 +82,11 @@ a:hover {
 	min-width: 484px;
 	outline: none;
     display: flex;
+    align-self: center;
 	justify-content: flex-end;
 	align-items: center;
+	
+	
 }
 
 #searchbar {
@@ -93,7 +96,7 @@ a:hover {
 	outline: none;
 	font-size: 24px;
 	border: none;
-}
+	}
 
 #micro {
 	width: 5%;
